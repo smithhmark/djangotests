@@ -1,0 +1,4 @@
+# djangotests
+
+a django sandbox
+
