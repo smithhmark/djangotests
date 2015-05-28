@@ -27,12 +27,12 @@ class Account(AbstractBaseUser):
 
     first_name = models.CharField(max_length=40, blank=True)
     last_name = models.CharField(max_length=40, blank=True)
-    tag_line = models.CharField(max_length=140, blank=True)
+    tagline = models.CharField(max_length=140, blank=True)
 
     is_admin = models.BooleanField(default=False)
 
     created_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     objects = AccountManager()
 
