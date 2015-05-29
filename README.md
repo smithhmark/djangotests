@@ -34,4 +34,17 @@ a django sandbox
   591  python manage.py createsuperuser
 
   597  pip install djangorestframework
- 
+
+  673  npm install -g bower
+  675  bower install
+  685  npm install -g bower
+  686  vim .bowerrc
+  704  bower init
+  708  bower init
+  712  bower install angular-route --save
+  713  bower install angular-cookies --save
+  715  bower install bootstrap --save
+  717  bower install bootstrap-material-design --save
+  718  bower install jquery --save
+  719  bower install --save ngDialog
+  720  bower install --save underscore
