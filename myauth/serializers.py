@@ -16,9 +16,11 @@ class AccountSerializer(serializers.ModelSerializer):
         read_only_fields = ('created_at', 'updated_at')
 
         def create(self, validated_data):
+            print("AS:", validated_data)
             return Account.objects.create(**validated_data)
 
         def update(self, inst, validated_data):
+            print("AS2:", validated_data)
             inst.username = validated_data.get('username', inst.username)
             inst.tagline = validated_data.get('tagline', inst.tagline)
             inst.save()
